@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Tip Calculator</h1>
+      <p class="subtitle">Split the bill and tip with your group.</p>
+
+      <form id="tip-form" novalidate>
+        <div class="field">
+          <label for="bill">Bill amount</label>
+          <input
+            id="bill"
+            name="bill"
+            type="text"
+            inputmode="decimal"
+            placeholder="0.00"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="field">
+          <label for="tip">Tip percentage</label>
+          <select id="tip" name="tip">
+            <option value="10">10%</option>
+            <option value="15" selected>15%</option>
+            <option value="20">20%</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="people">Number of people</label>
+          <input
+            id="people"
+            name="people"
+            type="text"
+            inputmode="numeric"
+            placeholder="1"
+            autocomplete="off"
+          />
+        </div>
+
+        <p id="error" class="error" role="alert" hidden></p>
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <section id="results" class="results" hidden>
+        <div class="result-row">
+          <span>Tip amount</span>
+          <strong id="tip-amount">$0.00</strong>
+        </div>
+        <div class="result-row">
+          <span>Total with tip</span>
+          <strong id="total-amount">$0.00</strong>
+        </div>
+        <div class="result-row">
+          <span>Each person pays</span>
+          <strong id="per-person">$0.00</strong>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

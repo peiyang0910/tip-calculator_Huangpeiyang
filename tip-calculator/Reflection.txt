@@ -1,0 +1,10 @@
+Reflection on the Cursor Activity
+
+Fixing typo:tab
+Renaming variable: inline
+Ask: understanding other's code
+Agent: adding new feature
+
+
+One of the I have to ask AI to correct is that the website doesn't response correctly when negative number or number with decimal entered in to number of people.
+I ask AI to redo it and it works.
